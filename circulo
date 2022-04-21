@@ -1,0 +1,38 @@
+package com.mycompany.shape_actividadd11;
+
+import java.awt.Rectangle;
+import java.awt.Shape;
+import java.awt.geom.AffineTransform;
+import java.awt.geom.PathIterator;
+import java.awt.geom.Point2D;
+import java.awt.geom.Rectangle2D;
+import java.util.Scanner;
+
+public class circulo implements Shape{
+    
+    double pi = 3.1416;
+    static double radio;
+    double area;
+    double perimetro;
+
+     circulo(double radio) {
+        this.radio = radio;
+    }
+    
+    public double getRadio() {
+        return radio;
+    }
+
+    public void setRadio(double radio) {
+        this.radio = radio;
+    }       
+
+    public double getArea() {
+        area= pi*(radio*radio);
+        return area;
+    }
+
+    public double getPerimeter() {
+        perimetro = 2*pi*radio;
+        return perimetro;
+   
