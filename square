@@ -1,0 +1,25 @@
+package com.mycompany.shape_actividadd11;
+
+
+public class Square implements Shapee {
+    static double lado;
+    double area, perimetro;
+    
+    Square(double lado){
+        this.lado = lado;
+    }
+    
+    @Override
+    public double getArea() {
+        area = lado * lado;
+        return area;
+    }
+
+    @Override
+    public double getPerimeter() {
+        perimetro = lado + lado + lado + lado;
+        return perimetro;
+    }
+
+    
+}
