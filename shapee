@@ -1,0 +1,10 @@
+package com.mycompany.shape_actividadd11;
+
+
+public interface Shapee {
+       
+    public double getArea();
+    
+    public double getPerimeter();
+    
+}
